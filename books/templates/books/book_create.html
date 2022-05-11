@@ -1,0 +1,15 @@
+{% extends '_base.html' %}
+
+
+{% block page_title %} ایجاد کتاب جدید{% endblock page_title %}
+
+{% block content %}
+    <form action="" method="post" class="mt-3">
+    {% csrf_token %}
+    {{ form.as_p }}
+        <input type="submit" class="btn btn-success" value="ایجاد">
+    </form>
+
+    <a href="{% url 'book_list' %}">برگشت به لیست کتاب ها</a>
+
+{% endblock content %}
