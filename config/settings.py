@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     #locale
     'accounts',
     'pages',
+    'books',
 ]
 
 MIDDLEWARE = [
